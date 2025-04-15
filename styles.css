@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+  background-color: #f8f8f8;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.logo {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
