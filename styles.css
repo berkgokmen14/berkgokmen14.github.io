@@ -3,16 +3,6 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
-
-  color: #.nav-links a {
-    margin-left: 2rem;
-    text-decoration: none;
-    color: #555;
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  ;
 }
 
 /* Navbar */
@@ -390,10 +380,14 @@ body {
 
 .footer-socials-container a {
   color: #222;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-right: 20px;
   text-decoration: none;
   transition: color 0.3s;
+}
+
+.footer-socials-container a:hover {
+  color: #444;
 }
 
 .footer-left-container {
@@ -415,6 +409,7 @@ body {
   text-decoration: none;
   color: #222;
   line-height: 2.5;
+  font-size: 1rem;
 }
 
 .footer-menu-container p {
