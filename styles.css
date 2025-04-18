@@ -584,6 +584,7 @@ html {
   .experience-card-content {
     width: 90%;
     margin: 1rem auto;
+    max-width: 400px;
   }
 
   /* Projects */
@@ -605,6 +606,7 @@ html {
   .projects-card-content {
     width: 90%;
     margin: 1rem auto;
+    max-width: 400px;
   }
 
   /* Footer */
