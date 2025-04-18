@@ -456,6 +456,8 @@ html {
 
 /* Mobile Design */
 @media (max-width: 1000px) {
+
+  /* Navbar */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -485,31 +487,29 @@ html {
     display: flex;
   }
 
-  /* .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem;
-  }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .nav-links a {
-    margin: 0.5rem 0;
+  /* Hero */
+  .hero {
+    margin-top: 20px;
   }
 
   .hero-container {
     flex-direction: column;
     text-align: center;
+    flex-direction: column-reverse;
   }
 
   .hero-text,
   .hero-image {
     width: 100%;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+  }
+
+  .hero-text-line {
+    margin: auto;
   }
 
   .hero-image img {
@@ -519,7 +519,7 @@ html {
   }
 
   .button-social-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
   }
 
@@ -561,9 +561,10 @@ html {
     margin-bottom: 1rem;
   }
 
-  .hero-container,
   .about-me-container,
   .education-container {
     flex-direction: column-reverse;
-  } */
+  }
+
+  */
 }
