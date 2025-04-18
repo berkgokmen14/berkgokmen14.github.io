@@ -581,6 +581,11 @@ html {
     text-align: left;
   }
 
+  .experience-card-content {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
   /* Projects */
   .projects h1 {
     margin: 0 0 30px;
@@ -597,33 +602,40 @@ html {
     text-align: left;
   }
 
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .footer-left-container,
-  .footer-right-container {
-    width: 100%;
-    padding: 0 1rem;
-    text-align: center;
-  }
-
-  .projects-card-content,
-  .experience-card-content {
+  .projects-card-content {
     width: 90%;
     margin: 1rem auto;
   }
 
-  .footer-right-container {
+  /* Footer */
+  .footer {
     flex-direction: column;
+    height: auto;
   }
 
-  .footer-menu-container {
+  .footer-left-container {
     width: 100%;
-    margin-bottom: 1rem;
+    text-align: center;
   }
 
-  */
+  .footer-right-container {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 1rem;
+    text-align: left;
+    display: flex;
+  }
+
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .experience-card:hover .experience-card-content {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .projects-card:hover .projects-card-content {
+    transform: none !important;
+    box-shadow: none !important;
+  }
 }
