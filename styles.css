@@ -34,6 +34,20 @@ body {
   font-weight: 600;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
 /* Hero Section */
 .hero {
   padding-right: 20px;
@@ -51,6 +65,12 @@ body {
 
 .hero-text {
   width: 50%
+}
+
+.hero-text-line {
+  width: 150px;
+  border: 1px solid #ddd;
+  margin-left: 0;
 }
 
 .hero-text h1 {
@@ -432,4 +452,118 @@ section {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Mobile Design */
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #222;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+    margin-top: 2rem;
+  }
+
+  .button-social-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-me-container,
+  .education-container,
+  .experience-card-container,
+  .projects-card-container,
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .about-me-text,
+  .education-text,
+  .about-me img,
+  .education img,
+  .experience-card,
+  .projects-card,
+  .footer-left-container,
+  .footer-right-container {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .projects-card-content,
+  .experience-card-content {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .footer-right-container {
+    flex-direction: column;
+  }
+
+  .footer-menu-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-container,
+  .about-me-container,
+  .education-container {
+    flex-direction: column-reverse;
+  } */
 }

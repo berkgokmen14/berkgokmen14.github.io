@@ -13,7 +13,13 @@
   <!-- Navigation -->
   <header class="navbar">
     <div class="logo">Berk Gokmen</div>
-    <nav class="nav-links">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
       <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
@@ -27,7 +33,7 @@
       <div class="hero-text">
         <h1>Berk Gokmen</h1>
         <h2>Hardware Engineer</h2>
-        <hr style="width: 150px; border: 1px solid #ddd; margin-left: 0;">
+        <hr class="hero-text-line">
         <p class="hero-education">
           Stanford M.S. EE<br />
           Cornell ECE &amp; CS B.S.
@@ -233,6 +239,23 @@
 
 
 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+      });
+    });
+  </script>
 
 </body>
 
