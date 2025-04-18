@@ -628,6 +628,11 @@ html {
     display: flex;
   }
 
+  .footer-right-container p,
+  .footer-right-container a {
+    font-size: 0.8rem;
+  }
+
 }
 
 @media (hover: none) and (pointer: coarse) {
