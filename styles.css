@@ -196,14 +196,15 @@ body {
 
 /* Education Section*/
 .education {
-  padding: 60px 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .education h1 {
   font-size: 3rem;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   color: #222;
   line-height: 1.1;
 }
