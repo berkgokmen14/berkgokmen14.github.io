@@ -59,7 +59,7 @@ body {
   color: #555;
 }
 
-.hero-text .education {
+.hero-text .hero-education {
   font-size: 1.15rem;
   margin-bottom: 25px;
   color: #666;
@@ -109,7 +109,7 @@ body {
   object-fit: cover;
 }
 
-/* About Me */
+/* About Me Section*/
 .about-me h1 {
   font-size: 3rem;
   margin: 0 0 10px;
@@ -146,6 +146,45 @@ body {
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.about-me p {
+  line-height: 1.5;
+}
+
+/* Education Section*/
+.education {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+  color: #222;
+  line-height: 1.1;
+}
+
+.education-container {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.education-text {
+  width: 50%;
+}
+
+.education img {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+}
+
+.education p {
+  line-height: 1.5;
 }
 
 .section-divider {
