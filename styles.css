@@ -581,14 +581,28 @@ html {
     text-align: left;
   }
 
-  .projects-card-container,
+  /* Projects */
+  .projects h1 {
+    margin: 0 0 30px;
+  }
+
+  .projects-card-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .projects-card {
+    width: 80%;
+    text-align: left;
+  }
+
   .footer {
     flex-direction: column;
     align-items: center;
     height: auto;
   }
 
-  .projects-card,
   .footer-left-container,
   .footer-right-container {
     width: 100%;
