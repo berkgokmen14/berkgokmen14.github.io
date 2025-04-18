@@ -426,6 +426,10 @@ body {
   height: 100px;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 html {
   scroll-behavior: smooth;
 }
