@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berk Gokmen | Projects</title>
+  <link rel="stylesheet" href="experience.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Berk Gokmen</a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+    </nav>
+  </header>
+
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <h1> Experience </h1>
+    <div class="section-divider"></div>
+    <div class="experience-container" id="nvidia">
+      <h2> NVIDIA - ASIC Verification GPU Intern</h2>
+      <div class="location-container">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Santa Clara, California</p>
+      </div>
+      <div class="date-container">
+        <i class="fas fa-calendar-alt"></i>
+        <p>May 2025 - August 2025</p>
+      </div>
+      <p class="experience-mini-title">Experience Description:</p>
+      <div class="experience-container-content">
+        <div class="experience-container-text">
+          <p> During my internship at NVIDIA, I worked with a small team of six engineers to develop an AI agent for
+            code
+            debugging. Our goal was to create a tool for hardware verification engineers that could explain code and
+            trace
+            bugs back to their source. </p>
+          <p>I joined the team at the beginning of the project, where I implemented most of the initial code and
+            architecture in Python. By the end of the project, the agent was able to mimick the
+            workflow of a verification engineer debugging code. I also trained three verification engineers on our tool
+            and incorporated their
+            feedback into the project. By the end of my internship, the agent was capable of basic reasoning over C++
+            files and successfully demonstrated the concept of using agentic AI for debugging workflows.</p>
+        </div>
+        <img src="./imgs/placeholder.png" alt="NVIDIA Experience Picture" />
+      </div>
+      <p class="experience-mini-title">Skills:</p>
+      <div class="skills-container">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Agentic AI</span>
+        <span class="skill-badge">Deep Learning</span>
+        <span class="skill-badge">C++</span>
+        <span class="skill-badge">Hardware Verification</span>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+    <div class="experience-container" id="csl">
+      <h2> Cornell Computer Systems Lab - Undergraduate Researcher</h2>
+      <div class="location-container">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Ithaca, New York</p>
+      </div>
+      <div class="date-container">
+        <i class="fas fa-calendar-alt"></i>
+        <p>September 2023 - May 2025</p>
+      </div>
+      <p class="experience-mini-title">Experience Description:</p>
+      <div class="experience-container-content">
+        <div class="experience-container-text">
+          <p> I worked with Professor Zhiru Zhang for two years on two research projects: AMC and EPack.</p>
+          <p>
+            AMC addresses the memory customization challenges in high-level synthesis (HLS). HLS relies on user
+            directives to achieve efficient memory structures, requiring expertise and making it a less end-to-end
+            solution. We developed a novel MLIR intermediate representation and compiler to be able to represent complex
+            memory structures. AMC leverages this abstraction, termed “MemTL,” and supports a Python-based DSL to
+            describe algorithms with less user concern for memory subsystems. During my time at the lab, I added support
+            for arithmetic operations and wrote a loop flattening optimization pass leading to a 30-40% cycle reduction
+            for deep nested loops. I also heavily worked on the verification of the compiler by writing unit tests for
+            optimization passes, conducting performance tests against Vivado, and performing application tests. My work
+            here led to a third-author paper submission for FPGA '25.</p>
+          <p></p>EPack is an ongoing project that addresses the area optimization problem for FPGAs: Given a Verilog
+          file or
+          a list of nets, what is the most efficient way to pack the netlist into LUTs? EPack uses E-graphs, a
+          superoptimization technique, to search for the optimal solution.</p>
+        </div>
+        <img src="./imgs/placeholder.png" alt="NVIDIA Experience Picture" />
+      </div>
+      <p class="experience-mini-title">Skills:</p>
+      <div class="skills-container">
+        <span class="skill-badge">C++</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Verilog</span>
+        <span class="skill-badge">MLIR</span>
+        <span class="skill-badge">LLVM</span>
+        <span class="skill-badge">FPGA</span>
+        <span class="skill-badge">Vivado/Vitis HLS</span>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+    <div class="experience-container" id="vui">
+      <h2> VUI, Inc - Software Engineer Intern</h2>
+      <div class="location-container">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Boston, Massachusetts</p>
+      </div>
+      <div class="date-container">
+        <i class="fas fa-calendar-alt"></i>
+        <p>May 2023 - August 2023</p>
+      </div>
+      <p class="experience-mini-title">Experience Description:</p>
+      <div class="experience-container-content">
+        <div class="experience-container-text">
+          <p> VUI, a 25-person startup, aimed to advance e-commerce search engines and chatbots by enabling natural
+            language-based search. </p>
+          <p>At VUI, I developed a Python pipeline that automatically processed and extracted real-time data from over
+            50,000 daily API logs. My scripts compiled key usage statistics into structured spreadsheets, which were
+            then distributed to big business companies using VUI's search solutions. Before my internship, this data
+            organization was done manually, and I helped them by automating this process.</p>
+        </div>
+        <img src="./imgs/placeholder.png" alt="NVIDIA Experience Picture" />
+      </div>
+      <p class="experience-mini-title">Skills:</p>
+      <div class="skills-container">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">NLP</span>
+        <span class="skill-badge">Machine Learning</span>
+        <span class="skill-badge">AWS</span>
+      </div>
+    </div>
+  </section>
+  <div class="section-divider"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left-container">
+      <p>Berk Gokmen</p>
+      <p class="footer-contact"><b>Contact Me:</b> bg372@cornell.edu</p>
+      <div class="footer-socials-container">
+        <a href="https://www.linkedin.com/in/berk-gokmen/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/berkgokmen14" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-right-container">
+
+      <div class="footer-menu-container">
+        <a class="footer-menu-title" href="index.html">Home:</a>
+        <a href=" index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+      </div>
+      <div class="footer-menu-container">
+        <a href="experience.html" class="footer-menu-title">Experience:</a>
+        <a href="experience.html#nvidia">NVIDIA</a>
+        <a href="experience.html#csl">Cornell CSL</a>
+        <a href="experience.html#vui">VUI</a>
+      </div>
+      <div class="footer-menu-container">
+        <a href="projects.html" class="footer-menu-title">Projects:</a>
+        <a href="projects.html#bitnet">Microsoft BitNet Accelerator</a>
+        <a href="projects.html#lightsaber">The Interactive Lightsaber</a>
+        <a href="projects.html#handwriting">The Handwriting Machine</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+
+</html>

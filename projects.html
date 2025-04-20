@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berk Gokmen | Experiences</title>
+  <link rel="stylesheet" href="projects.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Berk Gokmen</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+    </nav>
+  </header>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h1> Projects </h1>
+    <div class="section-divider"></div>
+    <div class="projects-container" id="bitnet">
+      <h2> Microsoft BitNet Accelerator</h2>
+      <div class="github-container">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/pis7/ece6775-final" target="_blank" rel="noopener noreferrer">GitHub Repo
+          &rarr;</a>
+      </div>
+      <p class="projects-mini-title">Project Description:</p>
+      <div class="projects-container-content">
+        <div class="projects-container-text">
+          <p> The growing complexity of large language models (LLMs), such as GPT and Llama, results in the degradation
+            of performance and energy consumption for training and inference. To counteract this, Microsoft created a
+            1.58-bit weight architecture named BitNet; it uses aggressive quantization by allowing the weights to be -1,
+            0, or 1, leading to significant model size reductions. For our ECE 6745 final class project, our group
+            wanted to build an accelerator for BitNet’s attention kernel through three different methods: Vivado HLS,
+            Allo, and Catapult HLS. </p>
+          <p>I mainly focused on the Allo section of the project. Allo is a Python-based accelerator design language
+            which can take in Python as input and spit out Vivado HLS code as output. It also automatically creates test
+            bench files based on Python assertions, making the implementation and design process extremely easy. The
+            performance of the accelerator was measured in cycles and the area of the accelerator was measured in LUTs.
+            By the end of the project, we were able to achieve 19.3x speedup compared to the baseline accelerator with
+            only 90% increase in area, still being able to fit on the FPGA. This involved optimizing the attention
+            kernel through using simpler data structures such as fixed point, utilizing pipelining and loop unrolling,
+            as well as loop tiling when complete unrolling was not feasible.</p>
+        </div>
+      </div>
+      <p class="projects-mini-title">Skills:</p>
+      <div class="skills-container">
+        <span class="skill-badge">Vivado HLS</span>
+        <span class="skill-badge">DSLs</span>
+        <span class="skill-badge">Catapult HLS</span>
+        <span class="skill-badge">LLMs</span>
+        <span class="skill-badge">Hardware/Software Co-Design</span>
+      </div>
+      <img src="./imgs/placeholder.png" alt="NVIDIA Experience Picture" />
+    </div>
+
+    <div class="section-divider"></div>
+    <div class="projects-container" id="lightsaber">
+      <h2> The Interactive Lightsaber</h2>
+      <div class="github-container">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/berkgokmen14/ECE4760Lightsaber" target="_blank" rel="noopener noreferrer">GitHub
+          Repo
+          &rarr;</a>
+      </div>
+      <p class="projects-mini-title">Project Description:</p>
+      <div class="projects-container-content">
+        <div class="projects-container-text">
+          <p> As two big Star Wars fans, for our ECE 4760 final project, we wanted to create a lightsaber that could
+            change color using the RP2040 microcontroller. Inspired by this, we created a lightsaber with two modes:
+            disco mode and vowel detection mode.</p>
+          <p>
+            Disco mode changes the color of the lightsaber based on the frequency and intensity content of the
+            surrounding sound. This is done by using a microphone and an FFT to gather frequency and intensity content
+            of the input sound/music. The frequency and intensity is then mapped to HSV, where hue is a linear mapping
+            from frequency and saturation is a linear mapping from intensity. The lightsaber includes a long LED strip
+            that can be programmed with RGB values. Therefore, after mapping frequency and intensity to HSV, we map this
+            back to RGB and send it back to the lightsaber.</p>
+          <p></p>Vowel detection is a lot more complicated, as we wanted to create a vowel detector completely from
+          scratch rather than using a pre-built detector/library. Our final goal was to distinguish the vowels EE and
+          AH, where EE would result in the lightsaber turning red and AH would result in the lightsaber turning blue.
+          Each vowel has different formant frequencies; as a result, to be able to distinguish EE from AH, we would need
+          to extract these formant frequencies from the input sound. This is done through using cepstral analysis, which
+          involves computing the FFT of the log-power spectrum, low passing the signal, and achieving a smoothed power
+          spectrum by taking the inverse FFT. From this, we extract the formant frequencies of the signal and change the
+          color of the lightsaber based on if it's closer to the frequencies of EE and AH. Our work here got published
+          on Raspberry Pi's website!</p>
+        </div>
+      </div>
+      <p class="projects-mini-title">Skills:</p>
+      <div class="skills-container">
+        <span class="skill-badge">Embedded Systems</span>
+        <span class="skill-badge">C</span>
+        <span class="skill-badge">Raspberry Pi</span>
+      </div>
+      <img src="./imgs/placeholder.png" alt="NVIDIA Experience Picture" />
+
+    </div>
+
+    <div class="section-divider"></div>
+    <div class="projects-container" id="handwriting">
+      <h2> The Handwriting Machine</h2>
+      <div class="github-container">
+        <i class="fab fa-github"></i>
+        <a href="https://pages.github.coecis.cornell.edu/ece3140-sp2023/bg372-dcb277/" target="_blank"
+          rel="noopener noreferrer">Project Page
+          &rarr;</a>
+      </div>
+      <p class="projects-mini-title">Project Description:</p>
+      <div class="projects-container-content">
+        <div class="projects-container-text">
+          <p> For our ECE 3140 Final Project, we decided to create a handwriting machine, which converts the text
+            inputted in the program into handwritten letters on paper. This project had 2 main components: mechanical
+            assembly and programming the software.</p>
+          <p>For the assembly, we wanted to create a plotter that can move to any position on an xy-plane (the paper).
+            To achieve this, we used two stepper motors and timing belts. By using these stepper motors, the tip of the
+            machine (pencil) could move anywhere on the paper because each stepper motor controlled the position along
+            each diagonal. However, we also needed to raise and lower the pen as well, so we included a servo motor at
+            the tip of the machine used for this purpose.</p>
+          <p>For the software side, we created a basic alphabet where each letter can be written using our grid. Since
+            each stepper controls a diagonal, to draw a straight line on the paper, the stepper motors had to be on
+            concurrently. To achieve this, we used the thread library created previously in the class using ARM
+            assembly, and we made use of multithreading with round-robin scheduling to create the illusion that the
+            motors were on at the same time. Each letter was mapped to a predefined combination of stepper motor
+            movements that drew each letter and after drawing each letter, the motor moved to the right by a
+            predetermined amount. Using such modularity allowed our handwriting machine to have different font sizes and
+            page margins. Overall, this was an incredibly fun project, and we were very happy with the result!</p>
+        </div>
+      </div>
+      <p class="projects-mini-title">Skills:</p>
+      <div class="skills-container">
+        <span class="skill-badge">Embedded Systems</span>
+        <span class="skill-badge">C</span>
+        <span class="skill-badge">ARM Assembly</span>
+      </div>
+      <img src="./imgs/placeholder.png" alt="NVIDIA Experience Picture" />
+
+    </div>
+
+  </section>
+  <div class="section-divider"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left-container">
+      <p>Berk Gokmen</p>
+      <p class="footer-contact"><b>Contact Me:</b> bg372@cornell.edu</p>
+      <div class="footer-socials-container">
+        <a href="https://www.linkedin.com/in/berk-gokmen/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/berkgokmen14" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-right-container">
+
+      <div class="footer-menu-container">
+        <a class="footer-menu-title" href="index.html">Home:</a>
+        <a href=" index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+      </div>
+      <div class="footer-menu-container">
+        <a href="experience.html" class="footer-menu-title">Experience:</a>
+        <a href="experience.html#nvidia">NVIDIA</a>
+        <a href="experience.html#csl">Cornell CSL</a>
+        <a href="experience.html#vui">VUI</a>
+      </div>
+      <div class="footer-menu-container">
+        <a href="projects.html" class="footer-menu-title">Projects:</a>
+        <a href="projects.html#bitnet">Microsoft BitNet Accelerator</a>
+        <a href="projects.html#lightsaber">The Interactive Lightsaber</a>
+        <a href="projects.html#handwriting">The Handwriting Machine</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+
+</html>
