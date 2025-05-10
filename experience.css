@@ -195,3 +195,76 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile Design */
+@media (max-width: 1000px) {
+
+  /* Navbar */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #222;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Experience */
+  .experience-container-text {
+    width: 100%;
+  }
+
+  .experience-container img {
+    width: auto;
+    margin-top: 50px;
+    display: block;
+    margin: 50px auto auto auto;
+    max-height: 700px;
+  }
+
+  .experience-container-content {
+    display: block;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer-left-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-right-container {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+  }
+
+  .footer-menu-container {
+    width: 100%;
+    text-align: center;
+  }
+}
