@@ -117,6 +117,7 @@ body {
 
 .projects-multimodal-content {
   display: flex;
+  gap: 20px;
 }
 
 #bitnet-multimodal iframe {
@@ -133,7 +134,6 @@ body {
 
 #lightsaber-multimodal img {
   width: 20%;
-  margin-left: 20px;
 }
 
 #handwriting-multimodal iframe {
