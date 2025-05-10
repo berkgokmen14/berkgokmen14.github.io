@@ -123,7 +123,7 @@ body {
 
 .social-icons a {
   color: #222;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-right: 20px;
   text-decoration: none;
   transition: color 0.3s;
@@ -167,7 +167,6 @@ body {
 .about-me-container {
   display: flex;
   align-items: center;
-  height: 550px;
 }
 
 .about-me-text {
@@ -401,7 +400,7 @@ body {
 
 .footer-socials-container a {
   color: #222;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-right: 20px;
   text-decoration: none;
   transition: color 0.3s;
