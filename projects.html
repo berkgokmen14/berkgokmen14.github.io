@@ -42,21 +42,32 @@
       <p class="projects-mini-title">Project Description:</p>
       <div class="projects-container-content">
         <div class="projects-container-text">
-          <p> The growing complexity of large language models (LLMs), such as GPT and Llama, results in the degradation
+          <p> The growing complexity of <b>large language models (LLMs)</b>, such as GPT and Llama, results in the
+            degradation
             of performance and energy consumption for training and inference. To counteract this, Microsoft created a
-            1.58-bit weight architecture named BitNet; it uses aggressive quantization by allowing the weights to be -1,
+            1.58-bit weight architecture named <b>BitNet</b>; it uses aggressive quantization by allowing the weights to
+            be -1,
             0, or 1, leading to significant model size reductions. For our ECE 6745 final class project, my team of four
-            wanted to build an accelerator for BitNet’s attention kernel through three different methods: Vivado HLS,
-            Allo, and Catapult HLS. </p>
+            wanted to build an accelerator for <b>BitNet’s attention kernel</b> through three different methods:
+            <b>Vivado HLS,
+              Allo,</b> and <b>Catapult HLS</b>.
+          </p>
           <p>This project was effectively divided up into three sections among the members, where I mainly focused on
-            the Allo section of the project. Allo is a Python-based accelerator design language
-            which can take in Python as input and spit out Vivado HLS code as output. It also automatically creates test
+            the Allo section of the project. Allo is a <b>Python-based accelerator design language</b>
+            which can take in <b>Python</b> as input and spit out <b>Vivado HLS</b> code as output. It also
+            automatically
+            creates test
             bench files based on Python assertions, making the implementation and design process extremely easy. The
-            performance of the accelerator was measured in cycles and the area of the accelerator was measured in LUTs.
-            By the end of the project, we were able to achieve 19.3x speedup compared to the baseline accelerator with
-            only 90% increase in area, still being able to fit on the FPGA. This involved optimizing the attention
-            kernel through using simpler data structures such as fixed point, utilizing pipelining and loop unrolling,
-            as well as loop tiling when complete unrolling was not feasible.</p>
+            performance of the accelerator was measured in cycles and the area of the accelerator was measured in
+            <b>LUTs</b>.
+            By the end of the project, we were able to achieve <b>19.3x speedup</b> compared to the baseline accelerator
+            with
+            only <b>90% increase in area</b>, still being able to fit on the <b>FPGA</b>. This involved optimizing the
+            attention
+            kernel through using simpler data structures such as fixed point, utilizing <b>pipelining</b> and <b>loop
+              unrolling</b>,
+            as well as <b>loop tiling</b> when complete unrolling was not feasible.
+          </p>
         </div>
       </div>
       <p class="projects-mini-title">Skills:</p>
@@ -91,24 +102,41 @@
         <div class="projects-container-text">
           <p> As two big Star Wars fans, for our ECE 4760 final project, my teammate and I wanted to create a lightsaber
             that could
-            change color using the RP2040 microcontroller. Inspired by this, we created a lightsaber with two modes:
-            disco mode and vowel detection mode.</p>
+            change color using the <b>RP2040 microcontroller</b>. Inspired by this, we created a lightsaber with two
+            modes:
+            <b>disco mode</b> and <b>vowel detection mode</b>.
+          </p>
           <p>
-            Disco mode changes the color of the lightsaber based on the frequency and intensity content of the
-            surrounding sound. This is done by using a microphone and an FFT to gather frequency and intensity content
-            of the input sound/music. The frequency and intensity is then mapped to HSV, where hue is a linear mapping
-            from frequency and saturation is a linear mapping from intensity. The lightsaber includes a long LED strip
+            Disco mode changes the color of the lightsaber based on the <b>frequency</b> and <b>intensity</b> content of
+            the
+            surrounding sound. This is done by using a <b>microphone</b> and an <b>FFT</b> to gather frequency and
+            intensity
+            content
+            of the input sound/music. The frequency and intensity is then mapped to <b>HSV</b>, where hue is a linear
+            mapping
+            from frequency and saturation is a linear mapping from intensity. The lightsaber includes a <b>long LED
+              strip</b>
             that can be programmed with RGB values. Therefore, after mapping frequency and intensity to HSV, we map this
             back to RGB and send it back to the lightsaber.</p>
           <p></p>Vowel detection is a lot more complicated, as we wanted to create a vowel detector completely from
-          scratch rather than using a pre-built detector/library. Our final goal was to distinguish the vowels EE and
-          AH, where EE would result in the lightsaber turning red and AH would result in the lightsaber turning blue.
-          Each vowel has different formant frequencies; as a result, to be able to distinguish EE from AH, we would need
-          to extract these formant frequencies from the input sound. This is done through using cepstral analysis, which
-          involves computing the FFT of the log-power spectrum, low passing the signal, and achieving a smoothed power
-          spectrum by taking the inverse FFT. From this, we extract the formant frequencies of the signal and change the
-          color of the lightsaber based on if it's closer to the frequencies of EE and AH. Our work here got published
-          on Raspberry Pi's website!</p>
+          scratch rather than using a pre-built detector/library. Our final goal was to distinguish the vowels <b>EE</b>
+          and
+          <b>AH</b>, where EE would result in the lightsaber turning red and AH would result in the lightsaber turning
+          blue.
+          Each vowel has different <b>formant frequencies</b>; as a result, to be able to distinguish EE from AH, we
+          would need
+          to extract these formant frequencies from the input sound. This is done through using <b>cepstral
+            analysis</b>, which
+          involves computing the <b>FFT of the log-power spectrum</b>, <b>low passing the signal</b>, and achieving a
+          <b>smoothed power
+            spectrum </b>by taking the <b>inverse FFT</b>. From this, we extract the formant frequencies of the signal
+          and
+          change the
+          color of the lightsaber based on if it's closer to the frequencies of EE and AH. <a
+            href="https://www.raspberrypi.com/news/what-did-computer-engineering-students-at-cornell-make-with-rp2040-last-term/"
+            target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #123f6b; ">Our work here
+            got published
+            on Raspberry Pi's website!</a></p>
         </div>
       </div>
       <p class="projects-mini-title">Skills:</p>
@@ -142,21 +170,27 @@
         <div class="projects-container-text">
           <p> For our ECE 3140 Final Project, my teammate and I decided to create a handwriting machine, which converts
             the text
-            inputted in the program into handwritten letters on paper. This project had 2 main components: mechanical
-            assembly and programming the software.</p>
+            inputted in the program into handwritten letters on paper. This project had 2 main components: <b>mechanical
+              assembly</b> and <b>programming the software</b>.</p>
           <p>For the assembly, we wanted to create a plotter that can move to any position on an xy-plane (the paper).
-            To achieve this, we used two stepper motors and timing belts. By using these stepper motors, the tip of the
+            To achieve this, we used <b>two stepper motors</b> and <b>timing belts</b>. By using these stepper motors,
+            the tip of the
             machine (pencil) could move anywhere on the paper because each stepper motor controlled the position along
-            each diagonal. However, we also needed to raise and lower the pen as well, so we included a servo motor at
+            each diagonal. However, we also needed to raise and lower the pen as well, so we included a <b>servo
+              motor</b> at
             the tip of the machine used for this purpose.</p>
           <p>For the software side, we created a basic alphabet where each letter can be written using our grid. Since
             each stepper controls a diagonal, to draw a straight line on the paper, the stepper motors had to be on
-            concurrently. To achieve this, we used the thread library created previously in the class using ARM
-            assembly, and we made use of multithreading with round-robin scheduling to create the illusion that the
+            concurrently. To achieve this, we used the <b>thread library</b> created previously in the class using
+            <b>ARM
+              assembly</b>, and we made use of <b>multithreading with round-robin scheduling</b> to create the illusion
+            that the
             motors were on at the same time. Each letter was mapped to a predefined combination of stepper motor
             movements that drew each letter and after drawing each letter, the motor moved to the right by a
-            predetermined amount. Using such modularity allowed our handwriting machine to have different font sizes and
-            page margins. Overall, this was an incredibly fun project, and we were very happy with the result!</p>
+            predetermined amount. Using such <b>modularity</b> allowed our handwriting machine to have different font
+            sizes and
+            page margins. Overall, this was an incredibly fun project, and we were very happy with the result!
+          </p>
         </div>
       </div>
       <p class="projects-mini-title">Skills:</p>
