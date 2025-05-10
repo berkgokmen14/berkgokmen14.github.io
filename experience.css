@@ -235,11 +235,9 @@ html {
   }
 
   .experience-container img {
-    width: auto;
-    margin-top: 50px;
+    width: 80%;
     display: block;
     margin: 50px auto auto auto;
-    max-height: 700px;
   }
 
   .experience-container-content {
