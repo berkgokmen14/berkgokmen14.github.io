@@ -37,6 +37,10 @@ body {
   text-decoration: none;
 }
 
+.logo:hover {
+  color: #555;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -84,6 +88,10 @@ body {
   margin: 0 0 0 20px;
   text-decoration: none;
   color: #555;
+}
+
+.github-container a:hover {
+  color: #333;
 }
 
 .projects-mini-title {
@@ -164,6 +172,15 @@ body {
   white-space: nowrap;
 }
 
+.text-link {
+  text-decoration: underline !important;
+  color: #123f6b !important;
+}
+
+.text-link:hover {
+  color: #0a2a4a !important;
+}
+
 /* Footer Section*/
 .footer {
   border-top: 4px solid #f8f8f8;
@@ -218,6 +235,10 @@ body {
   line-height: 2.5;
   font-size: 1.2rem !important;
   margin: 0;
+}
+
+.footer-menu-container a:hover {
+  color: #555;
 }
 
 .section-divider {
